@@ -19,28 +19,6 @@ The **AI Smart Interview Analyser** is an intelligent tool that automates the in
 
 ## 🏗️ Project Structure
 
-
-## Option 2: Simple Markdown Table Format
-
-```markdown
-## 🏗️ Project Structure
-
-| File | Purpose | Flow |
-|------|---------|------|
-| `app.py` | Main FastAPI application | 🚀 Entry Point |
-| ↓ | | |
-| `speech_to_text.py` | Audio to text transcription | 🎙️ → 📝 |
-| `nlp_analyzer.py` | Text analysis & NLP logic | 📝 → 🔍 |
-| `emotion_detection.py` | Emotion from audio analysis | 🎙️ → 😊 |
-| ↓ | | |
-| `scoring.py` | Score calculation combining all metrics | 📊 → |
-| ↓ | | |
-| `feedback.py` | Generate actionable feedback | 💬 → |
-| | | |
-| `requirements.txt` | Python dependencies | 📦 |
-| `__init__.py` | Package initializer | 🔧 |
-| `README.md` | Documentation | 📖 |
-
 ## 🔧 Technical Stack
 
 | Component | Technology |
