@@ -1,0 +1,12 @@
+streamlit==1.32.0
+opencv-python-headless==4.9.0.80
+speechrecognition==3.10.0
+pydub==0.25.1
+plotly==5.18.0
+pandas==2.1.0
+numpy==1.24.3
+nltk==3.8.1
+spacy==3.7.2
+textblob==0.17.1
+streamlit-webrtc==0.45.1
+av==10.0.0
