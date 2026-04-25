@@ -19,17 +19,50 @@ The **AI Smart Interview Analyser** is an intelligent tool that automates the in
 
 ## 🏗️ Project Structure
 
-AI_Smart_Interview_Analyser/
-│
-├── app.py # Main FastAPI application
-├── speech_to_text.py # Audio transcription module
-├── nlp_analyzer.py # Text analysis & NLP logic
-├── emotion_detection.py # Emotion recognition from audio
-├── scoring.py # Scoring and evaluation logic
-├── feedback.py # Feedback generation module
-├── requirements.txt # Python dependencies
-├── init.py # Package initializer
-└── README.md # Project documentation
+┌─────────────────────────────────────────────────────────────────┐
+│                    AI_Smart_Interview_Analyser                   │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+                    ┌─────────────────┐
+                    │    app.py       │
+                    │  (Main FastAPI)  │
+                    └────────┬────────┘
+                              │
+        ┌─────────────────────┼─────────────────────┐
+        │                     │                     │
+        ▼                     ▼                     ▼
+┌───────────────┐    ┌───────────────┐    ┌───────────────┐
+│ speech_to_    │    │   nlp_        │    │  emotion_     │
+│    text.py    │    │  analyzer.py  │    │ detection.py  │
+│               │    │               │    │               │
+│ Audio → Text  │    │ Text → Analysis│   │ Audio → Emotion│
+└───────┬───────┘    └───────┬───────┘    └───────┬───────┘
+        │                    │                    │
+        └────────────────────┼────────────────────┘
+                             │
+                             ▼
+                    ┌───────────────┐
+                    │  scoring.py   │
+                    │ (Score Calc)  │
+                    └───────┬───────┘
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │  feedback.py  │
+                    │ (Generate    │
+                    │  Feedback)    │
+                    └───────────────┘
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │ requirements  │
+                    │    .txt       │
+                    └───────────────┘
+
+        ┌─────────────────────────────────────┐
+        │  __init__.py  │  README.md          │
+        └─────────────────────────────────────┘
 
 
 ## 🔧 Technical Stack
